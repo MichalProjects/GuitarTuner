@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/tuner_scene_land">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".51" />
+
+
+    <TextView
+        android:id="@+id/recent_freq_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorDisabled"
+        android:textSize="@dimen/note_text_size_land"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="26dp"
+        tools:text="000.00 Hz" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/meter_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/meter_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <com.example.guitartuner.features.tuner.view.TunerMeter
+        android:id="@+id/tuner_meter_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/meter_bottom_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/meter_top_guideline" />
+
+    <com.example.guitartuner.features.tuner.view.LeftChevron
+        android:id="@+id/chevron_left_three"
+        style="@style/ChevronStyle" />
+
+    <com.example.guitartuner.features.tuner.view.LeftChevron
+        android:id="@+id/chevron_left_two"
+        style="@style/ChevronStyle" />
+
+    <com.example.guitartuner.features.tuner.view.LeftChevron
+        android:id="@+id/chevron_left_one"
+        style="@style/ChevronStyle" />
+
+    <TextView
+        android:id="@+id/note_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:minWidth="48dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/colorDisabled"
+        android:textSize="@dimen/note_text_size_land"
+        tools:text="A#" />
+
+    <com.example.guitartuner.features.tuner.view.RightChevron
+        android:id="@+id/chevron_right_one"
+        style="@style/ChevronStyle" />
+
+    <com.example.guitartuner.features.tuner.view.RightChevron
+        android:id="@+id/chevron_right_two"
+        style="@style/ChevronStyle" />
+
+    <com.example.guitartuner.features.tuner.view.RightChevron
+        android:id="@+id/chevron_right_three"
+        style="@style/ChevronStyle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/guitar0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/guitar00" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e"
+        android:textColor="#EFEBE9"
+        app:backgroundTint="@color/builder_button_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b"
+        android:textColor="#EFEBE9"
+        app:backgroundTint="@color/builder_button_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/g"
+        android:textColor="#EFEBE9"
+        app:backgroundTint="@color/builder_button_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="57dp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d"
+        android:textColor="#EFEBE9"
+        app:backgroundTint="@color/builder_button_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="560dp" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a"
+        android:textColor="#EFEBE9"
+        app:backgroundTint="@color/builder_button_color"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e1"
+        android:textColor="#EFEBE9"
+        app:backgroundTint="@color/builder_button_color"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

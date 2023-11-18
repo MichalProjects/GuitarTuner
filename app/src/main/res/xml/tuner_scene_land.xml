@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+
+        motion:constraintSetStart="@id/tuner_instrument"
+        motion:duration="600" />
+
+    <ConstraintSet android:id="@+id/tuner_instrument">
+
+        <Constraint
+            android:id="@+id/meter_top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            motion:layout_constraintGuide_percent="0.13" />
+
+        <Constraint
+            android:id="@+id/meter_bottom_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            motion:layout_constraintGuide_percent="0.34" />
+
+        <Constraint
+            android:id="@+id/note_top_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            motion:layout_constraintGuide_percent=".84" />
+
+        <Constraint
+            android:id="@+id/note_bottom_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            motion:layout_constraintGuide_percent=".94" />
+
+        <Constraint
+            android:id="@+id/recent_freq_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="@id/vertical_guide"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.508" />
+
+        <Constraint
+            android:id="@+id/chevron_left_three"
+            android:layout_marginLeft="4dp"
+            motion:layout_constraintBottom_toBottomOf="@id/chevron_left_two"
+            motion:layout_constraintHorizontal_chainStyle="spread_inside"
+            motion:layout_constraintHorizontal_weight="1"
+            motion:layout_constraintLeft_toRightOf="@id/vertical_guide"
+            motion:layout_constraintRight_toLeftOf="@id/chevron_left_two"
+            motion:layout_constraintTop_toTopOf="@id/chevron_left_two" />
+
+        <Constraint
+            android:id="@+id/chevron_left_two"
+            motion:layout_constraintBottom_toBottomOf="@id/chevron_left_one"
+            motion:layout_constraintHorizontal_weight="1"
+            motion:layout_constraintLeft_toRightOf="@id/chevron_left_three"
+            motion:layout_constraintRight_toLeftOf="@+id/chevron_left_one"
+            motion:layout_constraintTop_toTopOf="@id/chevron_left_one" />
+
+        <Constraint
+            android:id="@+id/chevron_left_one"
+            android:layout_marginBottom="4dp"
+            motion:layout_constraintBottom_toBottomOf="@id/note_name_text"
+            motion:layout_constraintHorizontal_weight="1"
+            motion:layout_constraintLeft_toRightOf="@id/chevron_left_two"
+            motion:layout_constraintRight_toLeftOf="@id/note_name_text"
+            motion:layout_constraintTop_toTopOf="@id/note_name_text" />
+
+        <Constraint
+            android:id="@+id/note_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            motion:layout_constraintBaseline_toBaselineOf="@id/recent_freq_text"
+            motion:layout_constraintLeft_toRightOf="@id/chevron_left_one"
+            motion:layout_constraintRight_toLeftOf="@id/chevron_right_one" />
+
+        <Constraint
+            android:id="@+id/chevron_right_one"
+            motion:layout_constraintBottom_toBottomOf="@id/chevron_left_one"
+            motion:layout_constraintHorizontal_weight="1"
+            motion:layout_constraintLeft_toRightOf="@id/note_name_text"
+            motion:layout_constraintRight_toLeftOf="@id/chevron_right_two"
+            motion:layout_constraintTop_toTopOf="@id/chevron_left_one"
+            motion:srcCompat="@drawable/ic_chevron_right" />
+
+        <Constraint
+            android:id="@+id/chevron_right_two"
+            motion:layout_constraintBottom_toBottomOf="@id/chevron_right_one"
+            motion:layout_constraintHorizontal_weight="1"
+            motion:layout_constraintLeft_toRightOf="@id/chevron_right_one"
+            motion:layout_constraintRight_toLeftOf="@id/chevron_right_three"
+            motion:layout_constraintTop_toTopOf="@id/chevron_right_one"
+            motion:srcCompat="@drawable/ic_chevron_right" />
+
+        <Constraint
+            android:id="@+id/chevron_right_three"
+            android:layout_marginRight="8dp"
+            motion:layout_constraintBottom_toBottomOf="@id/chevron_right_two"
+            motion:layout_constraintHorizontal_weight="1"
+            motion:layout_constraintLeft_toRightOf="@id/chevron_right_two"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/chevron_right_two"
+            motion:srcCompat="@drawable/ic_chevron_right" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:id="@+id/instrument_name_text" />
+        <Constraint
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            motion:layout_editor_absoluteX="0dp"
+            motion:layout_constraintTop_toTopOf="@id/meter_top_guideline"
+            motion:layout_constraintBottom_toBottomOf="@id/meter_bottom_guideline"
+            android:layout_width="match_parent"
+            motion:layout_constraintVertical_bias="1.0"
+            android:id="@+id/tuner_meter_view" />
+        <Constraint
+            android:layout_height="189dp"
+            android:layout_width="755dp"
+            android:id="@+id/imageView"
+            android:rotation="90"
+            motion:layout_constraintTop_toBottomOf="@+id/tuner_meter_view"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="1.7"
+            android:scaleY="2.5"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginBottom="10dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="122dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:rotation="16"
+            android:id="@+id/button6"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="416dp"
+            android:layout_marginRight="436dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tuner_meter_view"
+            android:layout_marginTop="2dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="134dp"
+            android:id="@+id/button5"
+            android:layout_width="40dp"
+            android:rotation="16"
+            android:layout_height="40dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="368dp"
+            android:layout_marginRight="384dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tuner_meter_view"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="145dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:rotation="16"
+            android:id="@+id/button4"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="320dp"
+            android:layout_marginRight="344dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tuner_meter_view"
+            android:layout_marginTop="30dp"/>
+        <Constraint
+            motion:layout_editor_absoluteY="154dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:rotation="16"
+            android:id="@+id/button3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="272dp"
+            android:layout_marginRight="292dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tuner_meter_view"
+            android:layout_marginTop="42dp"/>
+        <Constraint
+            motion:layout_editor_absoluteY="162dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:rotation="16"
+            android:id="@+id/button2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="222dp"
+            android:layout_marginRight="236dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tuner_meter_view"
+            android:layout_marginTop="56dp"/>
+        <Constraint
+            motion:layout_editor_absoluteY="174dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:rotation="16"
+            android:id="@+id/button"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="172dp"
+            android:layout_marginRight="184dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tuner_meter_view"
+            android:layout_marginTop="68dp"/>
+
+    </ConstraintSet>
+
+
+
+</MotionScene>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">GuitarTuner</string>
+    <string name="record_audio_permission_title">Welcome to GuitarTuner!</string>
+    <string name="record_audio_permission_message">To get started, we need to request the Record Audio permission.
+        This is required for pitch detection.
+    </string>
+    <string name="show_settings_title">Permissions Denied</string>
+    <string name="show_settings_message">We noticed you have disabled the Record Audio permission.
+        This app is unable to run without that permission.
+        We cannot detect frequencies without the microphone.
+        Hit OK to go to the application settings
+        where you can re-enable the permission.
+        Hit CANCEL to exit.
+    </string>
+
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="tuner_onboarding_request">Thanks for granting the permission. Would you like a brief intro?</string>
+    <string name="mode_showcase_text">This button toggles the tuner between instrument and chromatic modes.</string>
+    <string name="meter_showcase_text">In Instrument Mode, this meter lights up when you are close to an instrument note, and shows how sharp or flat you are in relation to that note. In Chromatic Mode, the meter lights up in relation to the closest chromatic note.</string>
+    <string name="note_name_showcase">This is the note you are closest to. In Instrument Mode, this is limited to the notes on selected instrument. In Chromatic Mode, it can be any chromatic note.</string>
+    <string name="instrument_showcase_text">You can tap here (or in the settings menu) to select an instrument.</string>
+    <string name="middleA_showcase_text">You can tap here (or in the settings menu) to change the middle A frequency. That\'s all for now, we hope you enjoy Instrutune!</string>
+
+    <string name="custom_onboarding_request">We don\'t see any custom tunings saved.
+        Would you like us to walk you through creating your first one?</string>
+
+    <string name="starter_showcase_one">You can start with a blank tuning, use an instrument as a starting point, or edit a previously created custom tuning. Let\'s start off with a blank instrument.</string>
+    <string name="fab_showcase_text">You can tap here to add a note. Give it a try.</string>
+    <string name="fab_showcase_two_text">Let\'s add one more note. Don\'t worry about the actual note for now.</string>
+    <string name="note_showcase_text">If you need to change a note, you can tap on the note name.
+    You can also delete the note by holding down on the name. Try changing it&#8230;</string>
+    <string name="drag_showcase_text">If you need to reorder notes, you can hold down on a string and drag it. Give it a try&#8230;</string>
+    <string name="name_showcase_text">You can give your tuning a name here. Once your tuning has at least one note and a name with at least one character, the save button at the bottom will activate. When you are editing a custom tuning that\'s already been saved, the delete button at the bottom will be activated. That\'s it for this walkthrough, have fun!</string>
+    <string name="builder_starter_prompt">Would you like to&#8230;</string>
+    <string name="btn_blank_text">Start with a blank instrument</string>
+    <string name="btn_template_text">Pick a starting instrument</string>
+    <string name="btn_edit_text">Edit a custom instrument</string>
+    <string name="chromatic_mode">Chromatic Mode</string>
+    <string name="instrument_mode">Instrument Mode</string>
+    <string name="chromatic">Chromatic</string>
+    <string name="blank_freq">000.00 Hz</string>
+    <string name="note_name_description">Note Name</string>
+    <string name="string_description">Instrument String</string>
+    <string name="tuning_name">Tuning Name:</string>
+    <string name="save_tuning">Save Tuning</string>
+    <string name="delete_tuning">Delete Tuning</string>
+    <string name="guitar0">TODO</string>
+    <string name="e">E</string>
+    <string name="b">B</string>
+    <string name="g">G</string>
+    <string name="d">D</string>
+    <string name="a">A</string>
+    <string name="e1">E</string>
+    <string name="splash">TODO</string>
+    <string name="guitartuner">GuitarTuner</string>
+    <string name="version">Version 1.0</string>
+
+</resources>

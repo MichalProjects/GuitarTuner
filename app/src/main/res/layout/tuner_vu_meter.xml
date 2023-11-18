@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_14"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_final" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_13"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_13" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_12"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_13" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_11"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_11" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_10"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_10" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_9"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_9" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_8"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_8" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_7" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_6" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_5" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_4" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_3" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_2"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_2" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_left_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_1" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorMain
+        android:id="@+id/indicator_main"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        app:activeColor="@color/indicator_in" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_1" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_2" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_3" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_4" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_5" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_6" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_7" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_8" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_9"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_9" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_10" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_11"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_11" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_12"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_12" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_13"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_13" />
+
+    <com.example.guitartuner.features.tuner.view.TunerIndicatorSmall
+        android:id="@+id/indicator_right_14"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:activeColor="@color/indicator_out_13" />
+
+</LinearLayout>
